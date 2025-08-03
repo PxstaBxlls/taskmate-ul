@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Edit Task Name</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+    <h3>Edit Task Name</h3>
+
+    {% if task.manage == request.user %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-success">Save</button>
+        <a href="{% url 'todolist' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+    {% else %}
+    <p> Cant access this particular page </p>
+    {% endif %}
+</div>
+{% endblock content %}

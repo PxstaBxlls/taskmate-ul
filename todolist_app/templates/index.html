@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title> Welcome to Taskmate </title>
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+
+    <!-- Image Row -->
+    <div class="row justify-content-center text-center g-4">
+        <div class="col-md-4">
+            <img src="{% static 'image/photo1.jpg' %}" alt="Micro Goals" class="img-fluid rounded shadow" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'image/discipline.jpg' %}" alt="Discipline" class="img-fluid rounded shadow" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'image/org.jpg' %}" alt="Organization" class="img-fluid rounded shadow" style="height: 250px; object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- Text Section -->
+    <div class="row mt-5 text-center">
+        <div class="col-md-10 offset-md-1">
+            <p class="h1 text-primary">Hi, welcome to your daily task tracker :')</p>
+            <p class="h3 mt-3">Quick, Easy to Use, Anytime Anywhere!!</p>
+            <p class="h5">Taskmate helps you to keep track of your life goals in one place!</p>
+            <button type="button" class="btn btn-outline-dark mt-3 px-5 py-2" onclick="window.location.href='{% url 'register' %}'">Register</button>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}
