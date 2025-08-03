@@ -1,0 +1,19 @@
+.custom-table {
+    background-color: #8282823d;
+    color: #000000;
+    font-weight: bold;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #989797e8;
+}
+
+.custom-page-link {
+  color: #ccc; /* default light gray */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-page-link:hover {
+  color: #fff; /* slightly brighter on hover */
+}
