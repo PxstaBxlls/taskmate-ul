@@ -31,7 +31,8 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DJANGO_DEBUG")
 
-ALLOWED_HOSTS = ["taskmate-ul-production.up.railway.app"]
+# ALLOWED_HOSTS = ["taskmate-ul-production.up.railway.app"] for production
+ALLOWED_HOSTS = []
 
 
 # Application definition
