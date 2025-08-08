@@ -1,6 +1,6 @@
 # Taskmate
 
-#Taskmate is a simple task manager web application built on Django Framework. The aim of this project was to implement the working of using Django Framework with forms, .env filed and the deployment process on Railway platform along with postgresql database.
+Taskmate is a simple task manager web application built on Django Framework. The aim of this project was to implement the working of using Django Framework with forms, .env filed and the deployment process on Railway platform along with postgresql database.
 
 
 ## DEMO
