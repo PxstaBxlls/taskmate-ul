@@ -171,5 +171,6 @@ LOGIN_REDIRECT_URL = 'todolist'        #custom redirecting for login
 LOGOUT_REDIRECT_URL = 'logout'
 LOGIN_URL = 'login'
 
-
+SESSION_COOKIE_AGE = 900
+SESSION_SAVE_EVERY_REQUEST = True
 
