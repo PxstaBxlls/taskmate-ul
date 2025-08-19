@@ -1,12 +1,33 @@
 {% extends 'base.html' %}
 
-{%block title%}
-    <title> About Us </title>
-{%endblock title%}
+{% block title %}
+    <title>About Me</title>
+{% endblock title %}
 
+{% block content %}
+<div class="container mt-4">
+    <h1>{{ title }}</h1>
+    <p>{{ about_text }}</p>
 
-{%block content%}
-    <div class = "container">
-        <h1>{{ about_text }}</h1>
-    </div>
-{%endblock content%}
+    <h3>My Mission</h3>
+    <p>{{ mission }}</p>
+
+    <h3>My Values</h3>
+    <ul>
+        {% for value in values %}
+        <li>{{ value }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Connect With Me</h3>
+    <p class="social-icons">
+    <a href="https://github.com/PxstaBxlls" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/rohanmaity/" target="_blank">
+        <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    </p>
+
+</div>
+{% endblock content %}

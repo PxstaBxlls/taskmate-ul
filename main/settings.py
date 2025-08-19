@@ -87,6 +87,7 @@ WSGI_APPLICATION = "main.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+#for prod
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -98,6 +99,17 @@ DATABASES = {
     }
 }
 
+#for dev
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': 'iMogambo7*',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 #postgresql://postgres:HtDKUcfBCWnVWSVZxgSYOZpBHZYAsdQy@postgres.railway.internal:5432/railway
 

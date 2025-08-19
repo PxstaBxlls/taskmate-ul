@@ -1,13 +1,19 @@
 {% extends 'base.html' %}
 
+{% block title %}
+    <title>Contact Me</title>
+{% endblock title %}
 
-{%block title%}
-    <title> Contact Page </title>
-{%endblock title%}
+{% block content %}
+<div class="container mt-4">
+    <h1>{{ title }}</h1>
+    <p>{{ contact_text }}</p>
 
+    <h3>Get in Touch</h3>
+    <p><strong>Phone:</strong> {{ phone }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
 
-{%block content%}
-    <div class = "container">
-        <h1>{{ contact_text }}</h1>
-    </div>
-{%endblock content%}
+    <h3>Credits</h3>
+    <p>Website designed & developed by <strong>Rohan Maity</strong>.</p>
+</div>
+{% endblock content %}

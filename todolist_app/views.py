@@ -27,18 +27,29 @@ def todolist(request):
         #content will always be passed as form of dictionary
         # return HttpResponse('Hi Welcome to the task page')
   
-def contact(request):
-    context = {
-        "contact_text" : "Welcome to Contact Page."
-    }
-    return render(request, 'contact.html', context)
-
-
 def about(request):
     context = {
-        "about_text" : "Welcome to About Page."
+        "title": "About Me",
+        "about_text": "Welcome to my personal project! I'm passionate about building applications that hopefully makes other's lives easier.",
+        "mission": "To keep learning, building, and gaining knowledge and expertise in tech and software development.",
+        "values": [
+            "Continuous Learning",
+            "Clean and Readable Code",
+            "Sharing Knowledge",
+            "Building for Impact"
+        ],
     }
     return render(request, 'about.html', context)
+
+
+def contact(request):
+    context = {
+        "title": "Contact Me",
+        "contact_text": "Feel free to reach out if you’d like to collaborate or just say hello.",
+        "phone": "+91-9351147851",   
+        "email": "rohanmaity1408@gmail.com", 
+    }
+    return render(request, 'contact.html', context)
 
 @login_required
 def edit_task(request, task_id):

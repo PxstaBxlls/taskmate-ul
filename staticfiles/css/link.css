@@ -1,0 +1,8 @@
+.social-icons a i {
+    color: black !important; /* Force icons to be black */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    color: #0077b5 !important; /* LinkedIn blue on hover */
+}
